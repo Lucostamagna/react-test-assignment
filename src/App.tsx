@@ -1,9 +1,20 @@
-import { useState } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Access from "./screens/Access";
+import Home from "./screens/Home";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
-  const [user, setUser] = useState();
-
-  return user ? <div>Profile TBD</div> : <div>Login TBD</div>;
+  const location = useLocation();
+  return (
+    <div>
+      <AnimatePresence mode="wait" initial={false}>
+        <Routes location={location}>
+          <Route path="/" element={<Home />} />
+          <Route path="/access" element={<Access />} />
+        </Routes>
+      </AnimatePresence>
+    </div>
+  );
 }
 
 export default App;
