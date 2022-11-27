@@ -8,4 +8,6 @@ npm install
 npm run dev
 ```
 
-gggggggggggggg
+Project Objectives:
+- Build an App using React, and typescript.
+-Use the figma models for your development and design
