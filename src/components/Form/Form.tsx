@@ -2,15 +2,12 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { joinClassNames } from "../../utils/joinClassNames";
-import "./Form.css";
+
 import { login } from "../../api/index";
 import log from "../../assets/images/in.svg";
 import close from "../../assets/images/close.svg";
 import loader from "../../assets/images/loader.svg";
-
-
-
-
+import "./Form.css";
 
 type User = {
   email: string;
@@ -55,8 +52,8 @@ const Form = () => {
 
   return (
     <div className="form-main">
-      <form onSubmit={onSubmit} className="form">
-        <div className="form-container">
+      <form onSubmit={onSubmit}>
+        <div>
           <div className="form-info">
             <p id="title">Welcome, Stranger</p>
             <p id="subtitle">

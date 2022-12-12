@@ -7,7 +7,7 @@
     align-items: center;
   }
   
-  .form {
+  .form-main form {
     width: 90%;
     height: 400px;
     display: flex;
@@ -21,7 +21,7 @@
     padding-bottom: 36px;
   }
   
-  .form-container {
+  .form-main div{
     width: 80%;
     height: 100%;
     display: flex;
