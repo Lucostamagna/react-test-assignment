@@ -9,13 +9,12 @@
 //     }, 1000);
 //   });
 // }
-export function login({
-  email,
-  password,
-}: {
-  email: string;
-  password: string;
-}) {
+
+interface User{
+  email:string; 
+  password:string;
+}
+export function login({ email, password }:User) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (email === "elon@mercdev.com" && password === "twitter") {
@@ -24,6 +23,6 @@ export function login({
         reject({ error: "Incorrect email or password" });
       }
     }, 1000);
-  })
+  });
 }
 

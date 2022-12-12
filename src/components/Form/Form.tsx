@@ -3,10 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { joinClassNames } from "../../utils/joinClassNames";
 import "./Form.css";
-
 import { login } from "../../api/index";
-
-
 import log from "../../assets/images/in.svg";
 import close from "../../assets/images/close.svg";
 import loader from "../../assets/images/loader.svg";
