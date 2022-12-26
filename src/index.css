@@ -2,12 +2,18 @@
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   
     color: rgba(29, 31, 38 0.8);
-    background: linear-gradient(135deg, #ac53ff 0%, #4439ff 100%);
-    background-repeat: no-repeat;
+    background:  #ac53ff;
+    grid-auto-flow: row;
+    display: grid;
+    margin: 0 auto;
     height: 100%;
-    /* max-width: 600px; */
+    max-width: 640px;
+    min-height: 100vh;
     width: 100%;
     text-align: center;
+    padding: 6px 32px;
+    align-content: space-between;
+    
   }
   
   * {
