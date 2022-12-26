@@ -15,7 +15,7 @@ type User = {
 };
 
 const Form = () => {
-  const [userData, setUserData] = useState("init");
+  const [userData, setUserData] = useState("null");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -26,7 +26,7 @@ const Form = () => {
   } = useForm<User>();
 
   const handleChange = () => {
-    setUserData("init");
+    setUserData('null');
   };
 
   const onSubmit = handleSubmit((data) => {
@@ -38,7 +38,7 @@ const Form = () => {
           setLoading(false);
           sessionStorage.setItem("name", res.data.name);
           sessionStorage.setItem("avatar", res.data.avatar);
-          navigate("/access");
+          navigate("/profile");
         } else {
           console.log(res.error);
           setUserData("");
@@ -57,7 +57,7 @@ const Form = () => {
           <div className="form-info">
             <p id="title">Welcome, Stranger</p>
             <p id="subtitle">
-              Please log in to this form if you wish to pass the exam.
+        
             </p>
           </div>
 
@@ -68,6 +68,7 @@ const Form = () => {
                 required: true,
                 pattern: /^[^@\s]+@[^@\s]+$/,
               })}
+             
               id="email"
               type="text"
               name="email"

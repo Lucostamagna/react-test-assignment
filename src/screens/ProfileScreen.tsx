@@ -4,8 +4,9 @@ import mercuryLogo from "../assets/images/logo.svg";
 import Modal from "../components/Modal/Modal";
 import { motion } from "framer-motion";
 
-const Access = () => {
+const ProfileScreen = () => {
   const navigate = useNavigate();
+  
 
   useEffect(() => {
     sessionStorage.length === 0 && navigate("/");
@@ -28,4 +29,4 @@ const Access = () => {
   );
 };
 
-export default Access;
+export default ProfileScreen;

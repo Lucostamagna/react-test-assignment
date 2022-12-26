@@ -12,7 +12,9 @@ const Modal = () => {
     sessionStorage.clear();
     navigate("/");
   };
-
+//The Modal component appears to use the use Navigate hook from the 
+//react-router-dom library to get a navigate function that can be used to 
+//navigate to a different route in a single-page application (SPA).
   return (
     <div className="modal">
       <div className="modal-container">

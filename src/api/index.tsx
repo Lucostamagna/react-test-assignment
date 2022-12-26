@@ -26,3 +26,6 @@ export function login({ email, password }:User) {
   });
 }
 
+//I made a promise that can be resolved or reject
+//if it is solved it shows me the corresponding data
+//or show incorrect mail or password

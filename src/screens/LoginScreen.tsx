@@ -3,7 +3,7 @@ import Form from "../components/Form/Form";
 
 import { motion } from 'framer-motion';
 
-const Home = () => {
+const LoginScreen = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -16,9 +16,10 @@ const Home = () => {
           <img src={mercuryLogo} id="logo" alt="Mercury Logo" />
         </div>
         <Form />
+        
       </div>
     </motion.div>
   );
 };
 
-export default Home;
+export default LoginScreen;
